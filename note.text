@@ -1,0 +1,28 @@
+1. 
+Vite เป็น Dev Server ที่ Compile File ที่จะ Request ไปหา Browser แต่
+ไม่ต้องพึ่งการ Bundling หรือ webpack ใด ๆ 
+มีแต่ไฟล์ที่มีมาเพื่อการ Compile เท่านั้น จะถึงให้ไวมาก ๆ
+
+2. 
+Vite รองรับ Hot module Replacement (HMR) ซึ่งจะต่างจากการ Reload page ทั่วไปจากที่เราคุ้นเคย 
+อีกทั้ง Vue Components และ CSS HMR ค่อนข้างใช้งานง่าย 
+พร้อมทั้งมี API ที่สามารถใช้กับ 3rd Party ตัวอื่น ๆ ได้
+
+3. 
+Vite ยังรองรับ Feature ต่าง ๆ ที่คล้ายกับ webpack 
+เช่น css-loader, assets releative path เป็นต้น
+
+4. 
+Vite รองรับทั้ง TSX และ JSX ที่ทำงานได้ไวมาก ๆ 
+ถึงแม้ว่าจะมีการแปลงโค้ดจาก TS แต่ HMR ก็ยังทำงานได้อย่างคงที่
+
+5. 
+Vite ใช้ Rollup สำหรับ Production Build ด้วย Config ภายในที่เหมือนกับ Dev Server ทุกประการ 
+และผลลัพท์จากการ Build เป็น Static Asset ทั่วไป 
+สามารถ Deploy ได้ทุกที่ 
+และยังมี Polyfill รองรับกับ Browser รุ่นเก่า
+
+6. 
+Vite ยังสามารถ Extend ตัว Config หรือ Plugin ได้ 
+โดยการสร้าง Custom File ในรูปแบบของ Koa Middleware 
+พร้อมกับ Rollup Plugin สำหรับ Build
